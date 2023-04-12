@@ -20,3 +20,14 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+.img {
+  animation: img 2s ease-out infinite;
+}
+
+@keyframes img {
+  50% {
+      transform: translateY(10px);
+  }
+}

@@ -42,7 +42,7 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-once="true"
               src='/hero-image.webp'
-              className="-mt-4"
+              className="-mt-4 img"
               alt=""
             />
           </div>
