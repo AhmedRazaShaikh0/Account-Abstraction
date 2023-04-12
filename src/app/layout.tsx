@@ -27,7 +27,7 @@ const { chains, provider } = configureChains(
   [mainnet, polygon, optimism, arbitrum],
   [publicProvider()]
 );
-const projectId = "b5486fa4-e3d9-450b-8428-646e757c10f6";
+const projectId = process.env.PROJECT_ID || "";
 
 const connectors = connectorsForWallets([
   {
