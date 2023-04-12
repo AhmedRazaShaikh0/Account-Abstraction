@@ -1,17 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.transform-fade-down-enter-active,
+.transform-fade-down-leave-active {
+  @apply transition-all translate-y-0 duration-300;
+}
+.transform-fade-down-enter, .transform-fade-down-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  @apply opacity-0 transform -translate-y-2;
 }
 
-.App {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-
+.paragraph {
+  @apply text-gray-700 tracking-wide leading-relaxed;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.text-header-gradient {
+  background: rgb(57, 132, 244);
+  background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
